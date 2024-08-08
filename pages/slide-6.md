@@ -47,8 +47,6 @@ export class AppComponent {}
 ```ts
 // src/app.component.ts
 import { Component } from '@angular/core';
-import { AppComponent } from './app.component';
-import { WelcomeComponent } from './welcome.component';
 
 @Component({
   selector: 'app-root',
@@ -62,6 +60,9 @@ export class AppComponent {}
 
 // src/app.module.ts
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { AppComponent } from './app.component';
+import { WelcomeComponent } from './welcome.component';
 
 @NgModule({
   declarations: [AppComponent, WelcomeComponent],
@@ -69,6 +70,61 @@ import { NgModule } from '@angular/core';
   exports: [AppComponent],
 })
 export class AppModule {}
+```
+```ts
+// src/app.component.ts
+...
+
+@Component({...})
+export class AppComponent {}
+
+// src/app.module.ts
+...
+
+@NgModule({...})
+export class AppModule {
+  static forRoot(config: Config): ModuleWithProviders {
+    return {
+      ngModule: AppModule,
+      providers: [{ 
+          provide: 'API_URL',
+          useValue: 'https://api.example.com' 
+      }],
+    };
+  }
+}
+```
+```ts
+// src/app.component.ts
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { WelcomeComponent } from './welcome.component';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [WelcomeComponent, RouterModule],
+  template: `
+    <div>
+      <app-welcome />
+    </div>
+  `,
+})
+export class AppComponent {}
+```
+```ts
+// src/app.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <div>
+      <app-welcome />
+    </div>
+  `,
+})
+export class AppComponent {}
 ```
 ````
 

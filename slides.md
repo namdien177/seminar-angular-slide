@@ -45,21 +45,48 @@ src: ./pages/slide-4.md
 
 ---
 transition: slide-up
-src: ./pages/slide-5.1.md
+src: ./pages/slide-5.md
 ---
 
 ---
+title: Components
 transition: slide-left
-src: ./pages/slide-5.2.md
+src: ./pages/slide-6.md
 layout: two-cols
 mdc: true
 ---
 
 ---
+title: Single vs Multi File Components
 transition: slide-right
-src: ./pages/slide-5.3.md
+src: ./pages/slide-7.md
 layout: two-cols
 mdc: true
 ---
+
+---
+title: Data Binding
+transition: slide-up
+src: ./pages/slide-8.md
+layout: two-cols
+mdc: true
+---
+
+---
+title: Control Flow
+transition: slide-up
+src: ./pages/slide-9.md
+layout: two-cols
+mdc: true
+---
+
+---
+title: Control Flow - Continued
+transition: slide-up
+src: ./pages/slide-10.md
+layout: two-cols
+mdc: true
+---
+
 
 <PoweredBySlidev mt-10 />
