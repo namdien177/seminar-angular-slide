@@ -1,0 +1,31 @@
+.text-brand-react {
+    color: #61dafb;
+}
+
+.text-brand-angular-old {
+    color: #dd0031;
+}
+
+.text-brand-google {
+    color: #EA4335
+}
+
+.text-brand-typescript {
+    color: #3178C6;
+}
+
+.text-brand-vue {
+    color: #42b883; /* Green color from Vue.js's logo */
+}
+
+.text-brand-angular {
+    --full-contrast: white;
+    --red-to-pink-to-purple-horizontal-gradient: linear-gradient( 90deg, var(--orange-red) 0%, var(--vivid-pink) 50%, var(--electric-violet) 100% );
+    --orange-red: color-mix(in srgb, oklch(63.32% .24 31.68), var(--full-contrast) 60%);
+    --vivid-pink: color-mix(in srgb, oklch(69.02% .277 332.77), var(--full-contrast) 70%);
+    --electric-violet: color-mix(in srgb, oklch(53.18% .28 296.97), var(--full-contrast) 70%);
+
+    background-image: var(--red-to-pink-to-purple-horizontal-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+}
