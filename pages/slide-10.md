@@ -41,7 +41,7 @@ export function App() {
 # <Angular />
 
 ````md magic-move {lines: true}
-```ts
+```angular-ts
 // src/app.component.ts
 @Component({
   standalone: true,
@@ -52,7 +52,7 @@ export function App() {
 })
 export class AppComponent {}
 ```
-```ts
+```angular-ts
 // src/app.component.ts
 @Component({
   standalone: true,
@@ -65,7 +65,7 @@ export class AppComponent {
   name = '';
 }
 ```
-```ts
+```angular-ts
 // src/app.component.ts
 @Component({
   standalone: true,
@@ -80,30 +80,14 @@ export class AppComponent {
   name = '';
 }
 ```
-```ts
+
+```angular-ts
 // src/app.component.ts
 @Component({
   standalone: true,
   selector: 'app-root',
   template: `
     <input [value]="name"
-           <!-- this will have type-error -->
-           (change)="name = $event.target.value"
-    />
-  `,
-})
-export class AppComponent {
-  name = '';
-}
-```
-```ts
-// src/app.component.ts
-@Component({
-  standalone: true,
-  selector: 'app-root',
-  template: `
-    <input [value]="name"
-           <!-- this will have type-error -->
            (change)="name = $event.target.value"
     />
   `,
@@ -116,7 +100,7 @@ export class AppComponent {
   }
 }
 ```
-```ts
+```angular-ts
 // src/app.component.ts
 @Component({
   standalone: true,
@@ -135,13 +119,12 @@ export class AppComponent {
   }
 }
 ```
-```ts
+```angular-ts
 // src/app.component.ts
 @Component({
   standalone: true,
   selector: 'app-root',
   template: `
-    <!-- this will have error -->
     <input [(value)]="name" />
   `,
 })
@@ -149,7 +132,21 @@ export class AppComponent {
   name = '';
 }
 ```
-```ts
+```angular-ts
+// src/app.component.ts
+@Component({
+  standalone: true,
+  selector: 'app-root',
+  template: `
+    <!-- This won't work! -->
+    <input [(value)]="name" />
+  `,
+})
+export class AppComponent {
+  name = '';
+}
+```
+```angular-ts
 // src/app.component.ts
 @Component({
   standalone: true,
@@ -164,6 +161,16 @@ export class AppComponent {
 }
 ```
 ````
+
+<v-click>
+
+> Template-driven Forms
+> 
+> - Suitable for simple forms
+> - Uses two-way data binding
+> - Not very scalable
+
+</v-click>
 
 </template>
 

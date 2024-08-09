@@ -29,29 +29,33 @@ mdc: true
 </div>
 
 ---
+title: Table of Content
 transition: fade-out
-src: ./pages/slide-2.md
+src: ./pages/table-of-content.md
 ---
 
 ---
+title: Introduction
 transition: slide-up
-src: ./pages/slide-3.md
+src: ./pages/introduction.md
 ---
 
 ---
+title: Fun Facts
 transition: slide-up
-src: ./pages/slide-4.md
+src: ./pages/fun-fact.md
 ---
 
 ---
+title: Template Language
 transition: slide-up
-src: ./pages/slide-5.md
+src: ./pages/template-lang-1.md
 ---
 
 ---
-title: Components
+title: Template Language - Continued
 transition: slide-left
-src: ./pages/slide-6.md
+src: ./pages/template-lang-2.md
 layout: two-cols
 mdc: true
 ---
@@ -59,7 +63,7 @@ mdc: true
 ---
 title: Single vs Multi File Components
 transition: slide-right
-src: ./pages/slide-7.md
+src: ./pages/single-multiple-components.md
 layout: two-cols
 mdc: true
 ---
@@ -67,7 +71,7 @@ mdc: true
 ---
 title: Data Binding
 transition: slide-up
-src: ./pages/slide-8.md
+src: ./pages/data-binding-1.md
 layout: two-cols
 mdc: true
 ---
@@ -75,7 +79,7 @@ mdc: true
 ---
 title: Data Binding - Continued
 transition: slide-up
-src: ./pages/slide-9.md
+src: ./pages/data-binding-2.md
 layout: two-cols
 mdc: true
 ---
@@ -91,7 +95,7 @@ mdc: true
 ---
 title: Control Flow
 transition: slide-up
-src: ./pages/slide-11.md
+src: ./pages/template-control-0.md
 layout: two-cols
 mdc: true
 ---
@@ -99,7 +103,7 @@ mdc: true
 ---
 title: Control Flow - Continued (IF)
 transition: slide-up
-src: ./pages/slide-12.md
+src: ./pages/template-control-1.md
 layout: two-cols
 mdc: true
 ---
@@ -107,37 +111,44 @@ mdc: true
 ---
 title: Control Flow - Continued (FOR)
 transition: slide-up
-src: ./pages/slide-13.md
+src: ./pages/template-control-2.md
 mdc: true
 layout: two-cols
 ---
 
 ---
-title: Form - React
+title: Form
 transition: fade
-src: ./pages/slide-14.md
 mdc: true
-layout: intro
+layout: image
+image: ../assets/form-img.png
 ---
 
 ---
 title: Form - React (Continued)
 transition: slide-up
-src: ./pages/slide-15.md
+src: ./pages/form-1.md
 mdc: true
 ---
 
 ---
 title: Form - React (Continued)
 transition: slide-up
-src: ./pages/slide-16.md
+src: ./pages/form-2.md
 mdc: true
 ---
 
 ---
-title: Form - Angular
+title: Form - Angular (template-driven)
 transition: slide-up
-src: ./pages/slide-17.md
+src: ./pages/form-angular-1.md
+mdc: true
+---
+
+---
+title: Form - Angular (reactive)
+transition: slide-up
+src: ./pages/form-angular-2.md
 mdc: true
 ---
 
