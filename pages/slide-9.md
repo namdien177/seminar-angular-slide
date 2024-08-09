@@ -2,19 +2,29 @@
 
 # <React />
 
-<v-clicks depth="2">
+````md magic-move {lines: true, class:'!children:overflow-x-hidden !children:overflow-y-auto !children:max-h-[450px]'}
+```tsx
+// src/sizer.tsx
+export const Sizer = ({ size, onSizeChange }) => {
+  return (
+    <input value={size} onChange={onSizeChange} />
+  );
+};
 
-- Most control flow is done with JavaScript syntax
-- Annoying restrictions:
-  - No `if` statements - replaced with ternary operators or logical `&&`/`||` operators
-  - No `for` loops - replaced with `map`
-  - No `switch` statements - replaced multiple ternary operators
-  - Have to return a single element - wrap in a `<Fragment>` if needed
-  - Can't use `class` - use `className` instead
-  - Can't use `style` - use `style` object instead
+// src/app.tsx
+export const App = () => {
+  const [size, setSize] = useState(50);
 
-</v-clicks>
+  const onSizeChange = (event) => {
+    setSize(event.target.value);
+  };
 
+  return (
+    <Sizer size={size} onSizeChange={onSizeChange} />
+  );
+}
+```
+````
 
 </template>
 
@@ -22,16 +32,74 @@
 
 # <Angular />
 
-<v-clicks depth="2">
+````md magic-move {lines: true, class:'!children:overflow-x-hidden !children:overflow-y-auto !children:max-h-[450px]'}
+```ts
+// src/sizer.component.ts
+@Component({
+  standalone: true,
+  selector: 'app-sizer',
+  template: `
+    <input [value]="size" (input)="onResize($event)" />
+  `,
+})
+export class SizerComponent {
+  @Input() size: number;
+  @Output() sizeChange = new EventEmitter<number>();
 
-- Most control flow is done with <u>Angular-specific syntax</u>
-- Annoying restrictions:
-  - Have to remember new syntax (`*ngIf`, `*ngFor`, etc., or `@if`, `@for`, ... with new control flow syntax)
-  - `<ng-template>`, `<ng-container>`, `<ng-content>`, and other Angular-specific elements
-  - `[<name>]` and `(<name>)` syntax for binding and events (`[(ngModel)]` for two-way binding)
+  onResize(event: Event) {
+    this.sizeChange.emit(
+      (event.target as HTMLInputElement).value
+    );
+  }
+}
 
-</v-clicks>
+// src/app.component.ts
+@Component({
+  ...,
+  selector: 'app-root',
+  template: `
+    <app-sizer [size]="size"
+               (sizeChange)="size = $event" />
+  `,
+})
+export class AppComponent {
+  size = 50;
+}
+```
 
+```ts
+// src/sizer.component.ts
+@Component({
+  standalone: true,
+  selector: 'app-sizer',
+  template: `
+    <input [value]="size" (input)="onResize($event)" />
+  `,
+})
+export class SizerComponent {
+  @Input() size: number;
+  @Output() sizeChange = new EventEmitter<number>();
+
+  onResize(event: Event) {
+    this.sizeChange.emit(
+      (event.target as HTMLInputElement).value
+    );
+  }
+}
+
+// src/app.component.ts
+@Component({
+  ...,
+  selector: 'app-root',
+  template: `
+    <app-sizer [(size)]="size" />
+  `,
+})
+export class AppComponent {
+  size = 50;
+}
+```
+````
 
 </template>
 

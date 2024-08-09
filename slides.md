@@ -73,7 +73,7 @@ mdc: true
 ---
 
 ---
-title: Control Flow
+title: Data Binding - Continued
 transition: slide-up
 src: ./pages/slide-9.md
 layout: two-cols
@@ -81,12 +81,68 @@ mdc: true
 ---
 
 ---
-title: Control Flow - Continued
+title: Data Binding - Forms
 transition: slide-up
 src: ./pages/slide-10.md
 layout: two-cols
 mdc: true
 ---
+
+---
+title: Control Flow
+transition: slide-up
+src: ./pages/slide-11.md
+layout: two-cols
+mdc: true
+---
+
+---
+title: Control Flow - Continued (IF)
+transition: slide-up
+src: ./pages/slide-12.md
+layout: two-cols
+mdc: true
+---
+
+---
+title: Control Flow - Continued (FOR)
+transition: slide-up
+src: ./pages/slide-13.md
+mdc: true
+layout: two-cols
+---
+
+---
+title: Form - React
+transition: fade
+src: ./pages/slide-14.md
+mdc: true
+layout: intro
+---
+
+---
+title: Form - React (Continued)
+transition: slide-up
+src: ./pages/slide-15.md
+mdc: true
+---
+
+---
+title: Form - React (Continued)
+transition: slide-up
+src: ./pages/slide-16.md
+mdc: true
+---
+
+---
+title: Form - Angular
+transition: slide-up
+src: ./pages/slide-17.md
+mdc: true
+---
+
+
+
 
 
 <PoweredBySlidev mt-10 />
