@@ -43,12 +43,62 @@ src: ./pages/introduction.md
 ---
 title: Fun Facts
 transition: slide-up
-src: ./pages/fun-fact.md
+src: ./pages/fun-fact-1.md
+---
+
+---
+title: Fun Facts - Continued
+transition: slide-left
+src: ./pages/fun-fact-2.md
+---
+
+---
+title: Fun Facts - Performance
+transition: slide-left
+layout: image
+image: ./assets/performance.png
+backgroundSize: contain
+---
+
+---
+title: Fun Facts - Performance (Continued)
+transition: fade
+layout: image
+image: ./assets/performance-2.png
+backgroundSize: contain
+---
+
+---
+title: Fun Facts - Performance (Continued)
+transition: fade
+layout: image
+image: ./assets/performance-3.png
+backgroundSize: contain
+---
+
+
+---
+title: Installation
+transition: slide-up
+src: ./pages/installation-1.md
+---
+
+---
+title: Installation - (continue)
+transition: slide-left
+src: ./pages/installation-2.md
+---
+
+---
+title: Installation - (continue)
+transition: slide-left
+src: ./pages/installation-3.md
+layout: two-cols
 ---
 
 ---
 title: Template Language
-transition: slide-up
+transition: fade
 src: ./pages/template-lang-1.md
 ---
 
