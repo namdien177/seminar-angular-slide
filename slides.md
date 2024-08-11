@@ -237,7 +237,19 @@ src: ./pages/form-angular-4.md
 mdc: true
 ---
 
+---
+title: Reactive Form - nested (array)
+transition: slide-up
+src: ./pages/form-angular-5.md
+mdc: true
+---
 
+---
+title: Form builder
+transition: slide-up
+src: ./pages/form-builder-1.md
+mdc: true
+---
 
 
 <PoweredBySlidev mt-10 />
