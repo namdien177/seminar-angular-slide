@@ -16,7 +16,7 @@
 
 <v-click>
 
-![Angular](./../assets/angular-dx-img.png)
+![Angular](/angular-dx-img.png)
 
 </v-click>
 

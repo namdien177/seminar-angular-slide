@@ -3,7 +3,7 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: ./assets/slide-1/bg.png
+background: /slide-1/bg.png
 # some information about your slides (markdown enabled)
 title: Welcome to Slidev
 info: |
@@ -56,7 +56,7 @@ src: ./pages/fun-fact-2.md
 title: Fun Facts - Performance
 transition: slide-left
 layout: image
-image: ./assets/performance.png
+image: /performance.png
 backgroundSize: contain
 ---
 
@@ -64,7 +64,7 @@ backgroundSize: contain
 title: Fun Facts - Performance (Continued)
 transition: fade
 layout: image
-image: ./assets/performance-2.png
+image: /performance-2.png
 backgroundSize: contain
 ---
 
@@ -72,7 +72,7 @@ backgroundSize: contain
 title: Fun Facts - Performance (Continued)
 transition: fade
 layout: image
-image: ./assets/performance-3.png
+image: /performance-3.png
 backgroundSize: contain
 ---
 
@@ -171,7 +171,7 @@ title: Form
 transition: fade
 mdc: true
 layout: image
-image: ../assets/form-img.png
+image: /form-img.png
 ---
 
 ---
