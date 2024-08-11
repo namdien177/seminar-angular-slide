@@ -196,12 +196,25 @@ mdc: true
 ---
 
 ---
-title: Form - Angular (reactive)
+title: Reactive Form
 transition: slide-up
 src: ./pages/form-angular-2.md
 mdc: true
 ---
 
+---
+title: Reactive Form - Group
+transition: slide-up
+src: ./pages/form-angular-3.md
+mdc: true
+---
+
+---
+title: Reactive Form - nested (object)
+transition: slide-up
+src: ./pages/form-angular-4.md
+mdc: true
+---
 
 
 
