@@ -167,6 +167,27 @@ layout: two-cols
 ---
 
 ---
+title: Routing
+transition: slide-up
+src: ./pages/routing-1.md
+mdc: true
+---
+
+---
+title: Routing
+transition: fade
+src: ./pages/routing-2.md
+mdc: true
+---
+
+---
+title: Routing
+transition: slide-up
+src: ./pages/routing-3.md
+mdc: true
+---
+
+---
 title: Form
 transition: fade
 mdc: true

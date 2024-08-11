@@ -41,7 +41,7 @@ export function App() {
 # <Angular />
 
 ````md magic-move {lines: true}
-```ts
+```angular-ts
 // src/app.component.ts
 @Component({
   selector: 'app-root',
@@ -55,7 +55,7 @@ export class AppComponent {
   arrNames = ['Alice', 'Bob', 'Charlie'];
 }
 ```
-```ts{8,14}
+```angular-ts{8,14}
 // src/app.component.ts
 @Component({
   selector: 'app-root',
@@ -72,7 +72,7 @@ export class AppComponent {
   arrNames = ['Alice', 'Bob', 'Charlie'];
 }
 ```
-```ts{8,12}
+```angular-ts{8,12}
 // src/app.component.ts
 @Component({
   selector: 'app-root',
@@ -90,7 +90,7 @@ export class AppComponent {
   arrNames = ['Alice', 'Bob', 'Charlie'];
 }
 ```
-```ts{8-10,16}
+```angular-ts{8-10,16}
 // src/app.component.ts
 @Component({
   selector: 'app-root',
@@ -109,7 +109,7 @@ export class AppComponent {
   arrNames = ['Alice', 'Bob', 'Charlie'];
 }
 ```
-```ts{8-16,22}
+```angular-ts{8-16,22}
 // src/app.component.ts
 @Component({
   selector: 'app-root',
@@ -134,7 +134,7 @@ export class AppComponent {
   arrNames = ['Alice', 'Bob', 'Charlie'];
 }
 ```
-```ts
+```angular-ts
 // src/app.component.ts
 @Component({
   selector: 'app-root',

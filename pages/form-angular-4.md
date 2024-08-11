@@ -121,12 +121,12 @@ export class LoginComponent {
     <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
       <input type="text" id="name" formControlName="name" />
       <!-- If you don't want to have real DOM container -->
-      <ng-component formGroupName="address">
+      <ng-container formGroupName="address">
         <input type="text" id="street" formControlName="street" />
         <input type="text" id="city" formControlName="city" />
         <input type="text" id="state" formControlName="state" />
         <input type="text" id="zip" formControlName="zip" />
-      </ng-component>
+      </ng-container>
       <button type="submit">Update</button>
     </form>
   `,
