@@ -246,9 +246,17 @@ mdc: true
 
 ---
 title: Form builder
-transition: slide-up
+transition: fade
 src: ./pages/form-builder-1.md
 mdc: true
+---
+
+---
+title: Form builder (Continued)
+transition: slide-up
+src: ./pages/form-builder-2.md
+mdc: true
+layout: TwoColsMainRight
 ---
 
 
