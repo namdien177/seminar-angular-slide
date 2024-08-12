@@ -259,5 +259,19 @@ mdc: true
 layout: TwoColsMainRight
 ---
 
+---
+title: Epilogue
+transition: slide-up
+src: ./pages/epilogue-1.md
+mdc: true
+---
+
+---
+title: Epilogue END
+transition: slide-up
+src: ./pages/epilogue-2.md
+mdc: true
+layout: end
+---
 
 <PoweredBySlidev mt-10 />

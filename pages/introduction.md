@@ -6,6 +6,9 @@
 - Heavily used in enterprises
 - Very opinionated approach
 - Best in-class CLI
+- Best in-class documentation
+- Best in-class testing
+- Best in-class [upgrade guide](https://angular.dev/update-guide)
 - Latest version: 18
 - With the renaissance in version 17
 - Best meta framework: <a href="https://analogjs.org/" target="_blank" class="text-red">AnalogJS</a>

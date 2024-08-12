@@ -1,6 +1,6 @@
 <template v-slot:default>
 
-# <Angular /> Component ➡️
+# <Angular /> Component 👉
 
 ````md magic-move {class:'!children:overflow-x-hidden !children:overflow-y-auto !children:max-h-[468px]'}
 ```angular-ts
@@ -330,7 +330,7 @@ export class AddressFormComponent {
         padding-right: 1rem;
 
         &.split-main-right {
-          grid-template-columns: 378px 1fr;
+          grid-template-columns: 386px 1fr;
         }
     }
     .slidev-layout.two-columns {
