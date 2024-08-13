@@ -108,7 +108,7 @@ export class AppComponent {
   isGoodbye = true;
 }
 ```
-```ts{6-11}
+```angular-ts{6-11}
 // src/app.component.ts
 @Component({
   selector: 'app-root',
@@ -127,7 +127,7 @@ export class AppComponent {
   isGoodbye = true;
 }
 ```
-```ts{6-12}
+```angular-ts{6-12}
 // src/app.component.ts
 @Component({
   selector: 'app-root',

@@ -24,7 +24,7 @@ export default App;
 # <Angular />
 
 ````md magic-move {lines: true}
-```ts{*|8-9}
+```angular-ts{*|8-9}
 // src/app.component.ts
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -40,7 +40,7 @@ import { WelcomeComponent } from './welcome.component';
 })
 export class AppComponent {}
 ```
-```ts
+```angular-ts
 // src/app.component.ts
 import { Component } from '@angular/core';
 
@@ -65,7 +65,7 @@ import { WelcomeComponent } from './welcome.component';
 })
 export class AppModule {}
 ```
-```ts
+```angular-ts
 // src/app.component.ts
 ...
 
@@ -88,7 +88,7 @@ export class AppModule {
   }
 }
 ```
-```ts
+```angular-ts
 // src/app.component.ts
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -104,7 +104,7 @@ import { WelcomeComponent } from './welcome.component';
 })
 export class AppComponent {}
 ```
-```ts
+```angular-ts
 // src/app.component.ts
 import { Component } from '@angular/core';
 import { WelcomeComponent } from './welcome.component';
