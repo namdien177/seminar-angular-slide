@@ -3,7 +3,7 @@
 ````md magic-move {lines: true, class:'!children:overflow-x-hidden !children:overflow-y-auto !children:max-h-[450px]'}
 ```angular-ts
 // app.routes.ts
-export const routes: RouterConfig = [
+export const routes: Route = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
 ];
@@ -11,7 +11,7 @@ export const routes: RouterConfig = [
 
 ```angular-ts
 // app.routes.ts
-export const routes: RouterConfig = [
+export const routes: Route = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   // Wildcard route - 404
@@ -22,7 +22,7 @@ export const routes: RouterConfig = [
 
 ```angular-ts
 // app.routes.ts
-export const routes: RouterConfig = [
+export const routes: Route = [
   // redirect route /profile -> /user
   { path: 'profile', redirectTo: 'user' },
   { path: 'user', component: UserComponent },
@@ -32,7 +32,7 @@ export const routes: RouterConfig = [
 
 ```angular-ts
 // app.routes.ts
-export const routes: RouterConfig = [
+export const routes: Route = [
   // but also redirect route /profile/settings -> /profile
   // because the default behavior is to match the prefix
   { path: 'profile', redirectTo: 'user' },
@@ -43,7 +43,7 @@ export const routes: RouterConfig = [
 
 ```angular-ts
 // app.routes.ts
-export const routes: RouterConfig = [
+export const routes: Route = [
   // pathMatch: 'full' - matches the full URL instead of prefix (default)
   // eg: - `/profile/settings` will not match this case
   //     - `/profile` will match
@@ -56,7 +56,7 @@ export const routes: RouterConfig = [
 
 ```angular-ts
 // app.routes.ts
-export const routes: RouterConfig = [
+export const routes: Route = [
   {
     path: 'profile',
     // queryParams - search params in the URL (eg: /profile?userId=123)
@@ -92,7 +92,7 @@ export const routes: RouterConfig = [
 
 ```angular-ts
 // app.routes.ts
-export const routes: RouterConfig = [
+export const routes: Route = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   // nested routes
@@ -109,7 +109,7 @@ export const routes: RouterConfig = [
 
 ```angular-ts
 // app.routes.ts
-export const routes: RouterConfig = [
+export const routes: Route = [
   { path: '', component: HomeComponent, title: 'Home' },
   { path: 'about', component: AboutComponent },
   // nested routes
