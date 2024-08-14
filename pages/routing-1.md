@@ -18,7 +18,7 @@ export class AppComponent {}
 // app.routes.ts
 import { Route } from '@angular/router';
 
-export const routes: Route = [];
+export const routes: Route[] = [];
 
 // app.config.ts
 import { routes } from './app.routes';
@@ -43,7 +43,7 @@ export const appConfig: ApplicationConfig = {
 export class AppComponent {}
 
 // app.routes.ts
-export const routes: Route = [];
+export const routes: Route[] = [];
 ```
 
 // 2
@@ -64,7 +64,7 @@ export const routes: Route = [];
 export class AppComponent {}
 
 // app.routes.ts
-export const routes: Route = [];
+export const routes: Route[] = [];
 ```
 
 // 3
@@ -86,7 +86,7 @@ export class AppComponent {}
 import { HomeComponent } from './home/home.component'; // URL: /
 import { AboutComponent } from './about/about.component'; // URL: /about
 
-export const routes: Route = [];
+export const routes: Route[] = [];
 ```
 
 // 4
@@ -95,7 +95,7 @@ export const routes: Route = [];
 import { HomeComponent } from './home/home.component'; // URL: /
 import { AboutComponent } from './about/about.component'; // URL: /about
 
-export const routes: Route = [
+export const routes: Route[] = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent }
 ];
@@ -107,7 +107,7 @@ export const routes: Route = [
 import { HomeComponent } from './home/home.component'; // URL: /
 import { AboutComponent } from './about/about.component'; // URL: /about
 
-export const routes: Route = [
+export const routes: Route[] = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent }
 ];
@@ -126,7 +126,7 @@ export class HomeComponent {}
 // 7
 ```angular-ts
 // app.routes.ts
-export const routes: Route = [
+export const routes: Route[] = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent }
 ];
@@ -146,7 +146,7 @@ export class HomeComponent {}
 // 8
 ```angular-ts{4,12}
 // app.routes.ts
-export const routes: Route = [
+export const routes: Route[] = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent }
 ];
@@ -165,7 +165,7 @@ export class HomeComponent {}
 // 9
 ```angular-ts
 // app.routes.ts
-export const routes: Route = [
+export const routes: Route[] = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent }
 ];
@@ -186,7 +186,7 @@ export class HomeComponent {}
 // 10
 ```angular-ts
 // app.routes.ts
-export const routes: Route = [...];
+export const routes: Route[] = [...];
 
 // /home/home.component.ts
 @Component({
@@ -214,7 +214,7 @@ export class AboutComponent {}
 // 11
 ```angular-ts
 // app.routes.ts
-export const routes: Route = [...];
+export const routes: Route[] = [...];
 
 // /navigation/navigation.component.ts
 @Component({
@@ -231,7 +231,7 @@ export class NavigationComponent {}
 // 12
 ```angular-ts
 // app.routes.ts
-export const routes: Route = [...];
+export const routes: Route[] = [...];
 
 // /navigation/navigation.component.ts
 @Component({
@@ -254,7 +254,7 @@ export class NavigationComponent {}
 // 12
 ```angular-ts
 // app.routes.ts
-export const routes: Route = [...];
+export const routes: Route[] = [...];
 
 // /navigation/navigation.component.ts
 @Component({
