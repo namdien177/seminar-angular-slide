@@ -21,7 +21,7 @@ export class LoginComponent {}
   template: `
     <form>
       <input type="email" id="email" [formControl]="email" />
-      <input type="password" id="email" [formControl]="password" />
+      <input type="password" id="password" [formControl]="password" />
       <button type="submit">Login</button>
     </form>
   `,
@@ -38,7 +38,7 @@ export class LoginComponent {
   template: `
     <form (ngSubmit)="onSubmit()">
       <input type="email" id="email" [formControl]="email" />
-      <input type="password" id="email" [formControl]="password" />
+      <input type="password" id="password" [formControl]="password" />
       <button type="submit">Login</button>
     </form>
   `,
@@ -62,7 +62,7 @@ export class LoginComponent {
   template: `
     <form (ngSubmit)="onSubmit()">
       <input type="email" id="email" [formControl]="email" />
-      <input type="password" id="email" [formControl]="password" />
+      <input type="password" id="password" [formControl]="password" />
       <button type="submit">Login</button>
     </form>
   `,
@@ -88,7 +88,7 @@ export class LoginComponent {
   template: `
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <input type="email" id="email" [formControl]="email" />
-      <input type="password" id="email" [formControl]="password" />
+      <input type="password" id="password" [formControl]="password" />
       <button type="submit">Login</button>
     </form>
   `,
@@ -111,7 +111,7 @@ export class LoginComponent {
   template: `
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <input type="email" id="email" formControlName="email" />
-      <input type="password" id="email" formControlName="password" />
+      <input type="password" id="password" formControlName="password" />
       <button type="submit">Login</button>
     </form>
   `,
